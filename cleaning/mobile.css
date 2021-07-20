@@ -1,0 +1,48 @@
+nav {
+  display: block;
+  text-align: center;
+}
+
+nav h2 {
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+}
+
+#jumbo {
+  padding-left: 2rem;
+  height: 40vh;
+}
+
+#jumbo #jumbo-phrase {
+  width: 50%;
+}
+
+#jumbo #jumbo-phrase h1 {
+  font-size: 30px;
+}
+
+#join {
+  display: block;
+  text-align: center;
+}
+
+#donate {
+  display: block;
+  text-align: center;
+}
+
+.photo img {
+  display: none;
+}
+
+.message {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+#contact {
+  display: block;
+}

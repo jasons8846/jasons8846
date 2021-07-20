@@ -1,0 +1,96 @@
+#navbar {
+  width: 100%;
+}
+
+.container {
+  display: block;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.container h1 {
+  display: block;
+  margin-bottom: 50px;
+  float: none;
+  width: 100px;
+}
+
+.container ul {
+  display: block;
+  float: none;
+  padding: 0px;
+  width: 100px;
+}
+
+.container ul li {
+  display: block;
+  list-style: none;
+  margin-top: 15px;
+  padding: 10px 10px;
+}
+
+#jumbo #jumbo-phrase {
+  padding: 10px 10px 50px 50px;
+  width: 200px;
+}
+
+#jumbo #jumbo-phrase h1 {
+  font-size: 45px;
+}
+
+#join {
+  text-align: center;
+}
+
+#join .join-right {
+  display: none;
+  float: none;
+  width: 0%;
+}
+
+#join .join-left {
+  float: none;
+}
+
+/* #join .join-left .detail {
+  padding-top: 50px;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+} */
+
+#donate {
+  display: center;
+}
+
+#donate .donate-left {
+  display: none;
+  float: none;
+  width: 0%;
+}
+
+#donate .donate-right {
+  padding-top: 50px;
+  float: none;
+  width: 100%;
+  margin-left: 8rem;
+  /* text-align: center; */
+}
+
+/* #donate .donate-right .detail {
+  padding-top: 50px;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+} */
+
+#contact {
+  height: 600px;
+  text-align: center;
+}
+
+.box {
+  display: block;
+  float: none;
+  width: 100%;
+}

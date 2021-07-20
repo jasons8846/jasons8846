@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80ed2d3fe0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Accelsior | Electronic Store</title>
+</head>
+<body>
+    <header>
+        <div id="navbar" class="navbar bg-light">
+            <h2 class="txt-col">ACC</h2>
+            <nav>
+                <input id="check" type="checkbox">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="#" class="txt-col">Contact</a></li>
+                    <li><a href="#" class="txt-col">Login</a></li>
+                    <li><a href="#" class="txt-col">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="jumbotron">
+            <div class="txt-col-2">
+                <h1>Who Are We</h1>
+            <p>We are a computer electonics company selling computer parts and accessories</p>
+            <a href="#" class="btn-1">Find Out More</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="top-sell">
+            <h3 class="txt-col">Top Sellers</h3>
+            <div class="prods">
+                <div id="prod-1" class="cards">
+                    <!-- <img src="./images/top/gaming-mb.jpg" alt=""> -->
+                    <a href=""><img src="./images/top/gaming-mb.jpg" alt=""></a>
+                </div>
+                <div id="prod-2" class="cards">
+                    <!-- <img src="./images/top/kingston-memory.jpg" alt=""> -->
+                    <a href=""><img src="./images/top/kingston-memory.jpg" alt=""></a>
+                </div>
+                <div id="prod-3" class="cards">
+                    <!-- <img src="./images/top/ryzen.jpg" alt=""> -->
+                    <a href=""><img src="./images/top/ryzen.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="prod-cat" class="bg-light txt-col">
+            <h3>Product Categories</h3>
+            <div class="categories">
+                <div id="cat-1" class="cat-card">
+                    <a href="#">CPU</a>
+                </div>
+                <div id="cat-2" class="cat-card">
+                    <a href="#">Desktop Case</a>
+                </div>
+                <div id="cat-3" class="cat-card">
+                    <a href="#">Laptops</a>
+                </div>
+                <div id="cat-4" class="cat-card">
+                    <a href="#">Motherboards</a>
+                </div>
+                <div id="cat-5" class="cat-card">
+                    <a href="#">Peripharals</a>
+                </div>
+                <div id="cat-6" class="cat-card">
+                    <a href="#">Ram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="txt-col">
+        <div class="contact">
+            <div id="phone">
+                <i class="fas fa-phone fa-3x"></i>
+           <p>(078) 999 4686</p>
+            </div>
+            <div id="mail">
+                <i class="fas fa-envelope fa-3x"></i>
+           <p>jasons@gmail.com</p>
+            </div>
+        </div>
+        <div class="social">
+          <div id="social-1">
+            <i class="fab fa-facebook fa-3x"></i>
+          </div>
+          <div id="social-2">
+            <i class="fab fa-instagram fa-3x"></i>
+        </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var scrollPos = window.scrollY;
+    var navBar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function(){
+        scrollPos = window.scrollY;
+
+        if(scrollPos >= 50){
+            navBar.classList.remove('bg-light');
+            navBar.classList.add('bg-opage');
+        }else{
+            navBar.classList.remove('bg-opage');
+            navBar.classList.add('bg-light');
+            
+        }
+    })
+
+</script>
+</html>

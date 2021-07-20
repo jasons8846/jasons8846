@@ -1,0 +1,25 @@
+.bg-light {
+  background-color: #ededed;
+}
+
+.txt-col {
+  color: #666666;
+}
+
+.txt-col-2 {
+  color: #fff;
+}
+
+.btn-1 {
+  border: #fff solid 1px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5%;
+}
+
+.bg-opage {
+  opacity: 0.5;
+  color: black;
+  background-color: #ededed;
+}

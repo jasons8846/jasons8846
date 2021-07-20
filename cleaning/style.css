@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #038f0a;
+  --secondary-color: #aafc9f;
+  --dark-color: #038f0a;
+  --light-color: #ddfad9;
+  --medium-color: #82f587;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-medium {
+  background-color: var(--medium-color);
+}
+
+.btn-primary {
+  padding: 1rem;
+  border: none;
+  background-color: var(--medium-color);
+  color: var(--primary-color);
+  max-width: 100px;
+  min-width: 80px;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+.current {
+  border-bottom: var(--dark-color) 1px solid;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav h2 {
+  width: 25%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+nav ul li:hover {
+  background-color: var(--medium-color);
+  cursor: pointer;
+}
+
+#jumbo {
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  background: url('leaves.jpg') no-repeat center center/cover;
+  height: 90vh;
+}
+
+#jumbo #jumbo-phrase {
+  width: 20%;
+}
+
+#jumbo #jumbo-phrase h1 {
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+
+#join {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: var(--light-color);
+}
+
+#donate {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.message {
+  width: 20%;
+  padding-bottom: 1rem;
+}
+
+.message p {
+  padding-bottom: 1rem;
+  font-size: 25px;
+}
+
+.photo img {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  text-align: center;
+  padding: 2rem;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+#footer {
+  text-align: center;
+}
+
+#about-info h2 {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#about-info p {
+  display: block;
+  text-align: justify;
+  padding: 1rem 5rem 5rem 5rem;
+}
+
+.form-info h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.form-info p {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#join-form {
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+#join-form input {
+  /* display: block; */
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 25rem;
+  border: #038f0a solid 1px;
+  border-radius: 5px;
+}
+
+#join-form textarea {
+  border: #038f0a solid 1px;
+  border-radius: 5px;
+}
+
+#join-form input:focus,
+#join-form textarea:focus {
+  outline: none;
+  border: #038f0a solid 2px;
+}
+
+#sub-btn {
+  grid-column: 2;
+  margin: 1rem;
+}
+
+#join-btn {
+  grid-column: 2;
+  margin: 1rem;
+}

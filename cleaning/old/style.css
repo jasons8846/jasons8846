@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Prompt', sans-serif;
+}
+
+.bg-light {
+  background-color: #ddfad9;
+}
+
+.bg-dark {
+  background-color: #aafc9f;
+}
+
+.btn {
+  display: block;
+  margin-top: 50px;
+  border: none;
+  background-color: #aafc9f;
+  color: #038f0a;
+  width: 150px;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn:hover {
+  background-color: #82f587;
+}
+
+a {
+  text-decoration: none;
+  color: #038f0a;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.container h1 {
+  display: block;
+  float: left;
+}
+
+.container ul {
+  float: right;
+}
+
+.container ul li {
+  list-style: none;
+  display: inline;
+  padding: 30px 30px 25px;
+  color: #038f0a;
+}
+
+.container ul li:hover {
+  background-color: #82f587;
+  cursor: pointer;
+}
+
+#jumbo {
+  background: url('leaves.jpg') no-repeat center center/cover;
+  height: 700px;
+}
+
+#jumbo #jumbo-phrase {
+  display: block;
+  padding: 150px 180px;
+  width: 700px;
+  height: 100px;
+}
+
+#jumbo #jumbo-phrase h1 {
+  font-size: 50px;
+}
+
+#join {
+  height: 700px;
+}
+
+.i-size-1 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+#join .join-left {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+#join .join-left .detail {
+  width: 600px;
+  margin-left: 100px;
+  padding-left: 250px;
+  text-align: center;
+}
+
+#join .join-left .detail h2 {
+  font-size: 40px;
+}
+
+#join .join-left .detail p {
+  font-size: 26px;
+}
+
+#join .join-left .detail a {
+  margin-left: 100px;
+}
+
+#join .join-right {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+#join .join-right img {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 350px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+#donate {
+  height: 700px;
+}
+
+#donate .donate-left {
+  display: block;
+  margin: auto;
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#donate .donate-right {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+#donate .donate-right .detail {
+  width: 600px;
+  padding-top: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+#donate .donate-right .detail h2 {
+  font-size: 40px;
+}
+
+#donate .donate-right .detail p {
+  font-size: 26px;
+}
+
+#donate .donate-right .detail a {
+  margin-left: 100px;
+}
+
+#donate .donate-left img {
+  margin-left: 150px;
+  margin-top: 0px;
+  width: 350px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+#contact {
+  height: 200px;
+}
+
+.box {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#footer {
+  height: 50px;
+  text-align: center;
+}
+
+#footer p {
+  padding: 10px;
+  color: #038f0a;
+}
+
+#forms {
+  padding: 20px;
+}
+
+#join-form {
+  display: block;
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+#join-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#join-form input {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 500px;
+  border: #038f0a solid 1px;
+  border-radius: 5px;
+}
+
+#join-form textarea {
+  border: #038f0a solid 1px;
+  border-radius: 5px;
+}
+
+#join-form input:focus,
+#join-form textarea:focus {
+  outline: none;
+  border: #038f0a solid 2px;
+}
+
+.form-info {
+  text-align: center;
+  width: 800px;
+  margin-left: 350px;
+}
+
+.form-info h1 {
+  padding: 20px;
+}
+
+.form-info p {
+  padding-bottom: 20px;
+}
+
+#about-info h2 {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#about-info p {
+  display: block;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+}
+
+.current {
+  text-decoration: underline;
+}

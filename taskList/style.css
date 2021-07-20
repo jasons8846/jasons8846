@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  /* max-width: 200px; */
+  background-color: lightskyblue;
+  color: #fff;
+  border: 1px lightskyblue solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: lightblue;
+  border: 1px lightblue solid;
+  cursor: pointer;
+}
+
+.btn-2 {
+  /* max-width: 200px; */
+  background-color: lightgray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.btn-2:hover {
+  background-color: gray;
+  border: 1px gray solid;
+  cursor: pointer;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+a:hover {
+  color: gray;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.input-form {
+  justify-self: center;
+  margin: 1rem;
+}
+
+#task-input {
+  padding: 0.5rem;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.task-list {
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  padding-top: 0rem;
+  height: 70vh;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  min-width: 450px;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  padding-right: 1rem;
+}
+
+.my-item {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding-top: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+#main-footer {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 12px;
+}

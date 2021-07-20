@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Hind', sans-serif;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  z-index: 2;
+}
+
+#navbar h2 {
+  margin-left: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#check {
+  position: absolute;
+  transform: scale(3.4);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav .hamburger {
+  position: absolute;
+  visibility: hidden;
+}
+
+#navbar .hamburger div {
+  background-color: #666666;
+  height: 3px;
+  margin: 5px;
+  width: 40px;
+}
+
+#check:checked ~ ul {
+  visibility: visible;
+}
+
+#navbar ul li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+#navbar ul li a:hover {
+  border-bottom: #666666 2px solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  z-index: 1;
+  text-align: center;
+}
+
+.jumbotron h1::before {
+  content: '';
+  background: url('../images/bg/motherboard-bg.jpg') no-repeat center
+    center/cover;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 90vh;
+}
+
+.jumbotron p {
+  margin-bottom: 10px;
+}
+
+#top-sell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-sell h3 {
+  margin-top: 20px;
+}
+
+.prods {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.333%;
+}
+
+.cards a img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#prod-cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+#prod-cat h3 {
+  padding: 30px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.cat-card {
+  width: 30%;
+  height: 40%;
+  text-align: center;
+  margin: 10px;
+}
+
+.cat-card a {
+  background-color: #fff;
+  color: #666666;
+}
+
+.cat-card:hover {
+  opacity: 0.7;
+}
+
+.cat-card a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#cat-1 {
+  background: url('../images/cards/cpu-cd.jpg') no-repeat center center/cover;
+}
+
+#cat-2 {
+  background: url('../images/cards/desktopcase-cd.jpg') no-repeat center
+    center/cover;
+}
+
+#cat-3 {
+  background: url('../images/cards/laptop-cd.jpg') no-repeat center center/cover;
+}
+
+#cat-4 {
+  background: url('../images/cards/motherboard-cd.jpg') no-repeat center
+    center/cover;
+}
+
+#cat-5 {
+  background: url('../images/cards/peripharals-cd.jpg') no-repeat center
+    center/cover;
+}
+
+#cat-6 {
+  background: url('../images/cards/ram-cd.jpg') no-repeat center center/cover;
+}
+
+.cat-card a {
+  display: block;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  text-align: center;
+}
+
+#footer .contact,
+.social {
+  padding: 50px;
+}
+
+#footer .social #social-1 {
+  padding-bottom: 20px;
+}
+
+#footer .contact > div:hover,
+.social > div:hover {
+  cursor: pointer;
+  color: black;
+}
+
+@media (max-width: 786px) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  #navbar h2 {
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    padding-top: 200px;
+    margin-right: 0px;
+    padding-bottom: 10px;
+    visibility: hidden;
+    z-index: -2;
+    border-radius: 5%;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding-bottom: 10px;
+  }
+
+  #check:checked ~ ul {
+    background-color: #ededed;
+    margin-top: 0px;
+    padding-left: 30px;
+  }
+  /* #navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  } */
+
+  #check {
+    visibility: visible;
+  }
+
+  nav .hamburger {
+    position: absolute;
+    visibility: visible;
+  }
+
+  .prods {
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  #prod-cat {
+    height: 170vh;
+    padding-bottom: 50px;
+    justify-content: start;
+  }
+
+  #prod-cat h3 {
+    padding: 20px;
+  }
+
+  .categories {
+    height: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #navbar {
+    flex-direction: column;
+    color: red;
+  }
+}

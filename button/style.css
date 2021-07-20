@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+#btn {
+  position: absolute;
+  border: #9e3737 solid 1px;
+  background-color: rgb(237, 69, 69);
+  border-radius: 5%;
+  color: #e8e8e8;
+  height: 100px;
+  width: 100px;
+  margin: 50px 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 0 5px #333;
+}
+
+#btn div {
+  top: 10px;
+  padding-left: 18px;
+  padding-top: 18px;
+}
+
+#btn:hover {
+  background-color: #9e3737;
+}
