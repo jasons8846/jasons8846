@@ -4,15 +4,22 @@
   /* box-sizing: border-box; */
 }
 
+#btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
 #btn {
-  position: absolute;
+  /* position: absolute; */
   border: #9e3737 solid 1px;
   background-color: rgb(237, 69, 69);
   border-radius: 5%;
   color: #e8e8e8;
   height: 100px;
   width: 100px;
-  margin: 50px 50px;
+  /* margin: 50px 50px; */
   font-size: 2rem;
   cursor: pointer;
   z-index: 5;
