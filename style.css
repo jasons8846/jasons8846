@@ -1,6 +1,7 @@
 :root {
   --primary-color: #333;
-  --secondary-color: rgb(245, 243, 243);
+  --secondary-color: lightgray;
+  --bg-light: rgb(245, 243, 243);
 }
 
 * {
@@ -12,6 +13,7 @@
 
 body {
   text-align: center;
+  background-color: var(--bg-light);
 }
 
 h1 {
