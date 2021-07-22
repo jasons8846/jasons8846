@@ -27,6 +27,10 @@ a {
   max-height: 500px;
 }
 
+p {
+  padding: 1rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
