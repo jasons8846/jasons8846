@@ -37,3 +37,7 @@ table {
 td {
   padding: 0.5rem 0;
 }
+
+input[type='checkbox'] {
+  filter: hue-rotate(0deg);
+}
