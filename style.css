@@ -72,6 +72,55 @@ p {
   height: 100%;
 }
 
+#site-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 53vh;
+}
+
+#site-types div {
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+
+  background-color: #d8d8d8;
+}
+
+#site-types div:hover {
+  opacity: 0.5;
+}
+
+#repl-sites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 53vh;
+}
+
+#repl-sites div {
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+
+  background-color: #d8d8d8;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav div {
+  margin-left: 1rem;
+}
+
+#repl-sites div:hover {
+  opacity: 0.5;
+}
+
 #contact {
   margin-top: 1rem;
   padding-top: 1rem;

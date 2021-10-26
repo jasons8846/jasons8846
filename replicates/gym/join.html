@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80ed2d3fe0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="join-navbar">
+            <div id="gym-logo"><h2>Gym</h2></div>
+        </div>
+    </header>
+    <section id="intro">
+        <div><h1>Join Today and <span>get 2 months free</span></h1></div>
+        <div>No registration fee required until the end of the year</div>
+    </section>
+
+    <section id="reg-form">
+        <div id="reg-form-img"><img src="./img/jumbo_img.jpg" alt=""></div>
+        <div id="reg-from-para">
+            <div>
+                <h2>Call me back please</h2>
+                <p>Please provide your details below and we will 
+                    call you back to discuss membership terms
+                </p>
+            </div>
+            <form action="">
+                <div class="form-item">
+                    <label for="firstName">First Name</label><br />
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-item">
+                    <label for="lastName">Last Name</label><br />
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label><br />
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-item">
+                    <label for="mobile">Mobile Number</label><br />
+                    <input type="text" id="mobile" name="mobile">
+                </div>
+                <div class="form-item">
+                   
+                    <label>Club <br />
+                        <input list="gym-club" name="gym-club" /></label>
+                        <datalist id="gym-club">
+                          <option value="Cape Town">
+                          <option value="Durban">
+                          <option value="Qeberga">
+                          <option value="Bloemfontein">
+                          <option value="Johannesburg">
+                          <option value="Pretoria">
+                        </datalist>
+
+
+
+                </div>
+                <div class="form-item">
+                    <h3>What is your goals?</h3>
+                    <div id="fit-qa">
+                        <div><button>Get Fit</button>
+                           </div>
+                        <div><button>Lose Weight</button></div>
+                        <div><button>Build muscle</button></div>
+                        <div><button>Feel good</button></div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <div><button id="join-submit">Submit</button></div>
+                </div>
+
+            </form>
+        </div>
+
+       
+    </section>
+    <section id="terms-and-cond">
+        <div id="terms">
+            <p>View terms and conditions <a href="">here</a></p>
+        </div>
+
+        <div id="poster">
+            <p>
+                We have the largets network of gyms in the country and you can join anywhere
+            and visit any club with one membership.
+            </p> 
+        </div>
+    </section>
+
+    <section id="qandq-section">
+        <div id="header-qa">
+            <h4>COMMON QUESTIONS</h4>
+        </div>
+        <div id="question">
+            <h1>How can we help?</h1>
+        </div>
+        <div id="comm-qa">
+            <div class="dtl-qa" id="qa1">
+                <div id="qa1-dtl">
+                    <p>What type of membership optin do you offer?</p>
+                    <div id="qq1" class="sign" onClick="unhideP(this.id)"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="answ" id="qa1-answ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut praesentium distinctio! Excepturi illum magnam repudiandae, eos iusto non possimus!
+                    </p>
+                </div>
+                
+            </div>
+            <div class="dtl-qa" id="qa2">
+                <div id="qa2-dtl">
+                    <p>Can I exit my membership anytime?</p>
+                    <div id="qq2" class="sign" onClick="unhideP(this.id)"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="answ" id="qa2-answ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut praesentium distinctio! Excepturi illum magnam repudiandae, eos iusto non possimus!
+                    </p>
+                </div>
+                
+            </div>
+            <div class="dtl-qa" id="qa3">
+                <div id="qa3-dtl">
+                    <p>How do I register for a class?</p>
+                    <div id="qq3" class="sign" onClick="unhideP(this.id)"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="answ" id="qa3-answ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut praesentium distinctio! Excepturi illum magnam repudiandae, eos iusto non possimus!
+                    </p>
+                </div>
+                
+            </div>
+            <div class="dtl-qa" id="qa4">
+                <div id="qa4-dtl">
+                    <p>How do I register for a personal trainer?</p>
+                    <div id="qq4" class="sign" onClick="unhideP(this.id)"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="answ" id="qa4-answ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut praesentium distinctio! Excepturi illum magnam repudiandae, eos iusto non possimus!
+                    </p>
+                </div>
+                
+            </div>
+            <div class="dtl-qa" id="qa1">
+                <div id="qa5-dtl">
+                    <p>Where can I gym?</p>
+                    <div id="qq5" class="sign" onClick="unhideP(this.id)"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="answ" id="qa5-answ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut praesentium distinctio! Excepturi illum magnam repudiandae, eos iusto non possimus!
+                    </p>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="join-testimonials">
+        <div id="join-header-test">
+            <h4>TESTIMONIALS</h4>
+        </div>
+        <div id="what-said">
+            <h1>What are they saying</h1>
+        </div>
+        <div id="testim">
+            <div id = "test-details">
+                <div class="testi" id="test1">
+                    <div class="test-para" id="test1-para">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam, ipsum quod possimus esse consectetur maiores optio nemo distinctio debitis eaque, est excepturi, voluptate harum voluptatibus aliquid. Enim, quasi? Magni?</p>
+                    </div>
+                    <div class="test-name" id="test1-name"><p>Jackie</p></div>
+                </div>
+                <div class="testi" id="test2">
+                    <div class="test-para" id="test2-para">
+                        <p>Hello i absolutely love this gym. Do you know, i would recommended it to anyone. 3 months and had to get myself a trainer. The staff is so friendly no matter the branch I go to. Go Gym you are the best and keep up the good work. Thanks</p>
+                    </div>
+                    <div class="test-name" id="test2-name"><p>Craig</p></div>
+                </div>
+            </div>
+            <div id="test-next">
+                <button id="next-test-btn" onclick="shownext()">></button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="general-info">
+        <div id="app-stores">
+            <div>Gym</div>
+            <div><i class="fab fa-google-play fa-2x"></i></div>
+            <div><i class="fab fa-app-store-ios fa-2x"></i></div>
+        </div>
+        <div id="table-info">
+            <table>
+                <tr>
+                    <td>Clubs</td>
+                    <td>TimeTables</td>
+                </tr>
+                <tr>
+                    <td>Membership</td>
+                    <td>Contact Use</td>
+                </tr>
+                <tr>
+                    <td>Swimming</td>
+                    <td>The Leagal Stuff</td>
+                </tr>
+                <tr>
+                    <td>Kids</td>
+                    <td>Club rules</td>
+                </tr>
+                <tr>
+                    <td>Personal Training</td>
+                    <td>FAQs</td>
+                </tr>
+                <tr>
+                    <td>Classes</td>
+                    <td>Blog</td>
+                </tr>
+            </table>
+        </div>
+        <div id="socials">
+            <div><i class="fab fa-facebook-square fa-2x"></i></div>
+            <div><i class="fab fa-twitter fa-2x"></i></div>
+            <div><i class="fab fa-instagram fa-2x"></i></div>
+            <div><i class="fab fa-linkedin fa-2x"></i></div>
+        </div>
+    </section>
+    
+</body>
+<footer>
+    This website is only for illustrative purposes
+</footer>
+<script src="app2.js"></script>
+</html>

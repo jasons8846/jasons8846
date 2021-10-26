@@ -1,0 +1,128 @@
+@media (max-width: 900px) {
+  #navbar {
+    height: 45%;
+    justify-content: start;
+  }
+
+  #nav-bottom {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+
+  #nav-top {
+    margin-bottom: 0rem;
+  }
+
+  #nav-mid {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  #nav-end {
+    flex-direction: column;
+    height: 120%;
+  }
+
+  #navbar-hid {
+    width: 70%;
+    margin-top: -2rem;
+    margin-left: 5rem;
+  }
+
+  #info-cards {
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem;
+    margin-left: 5rem;
+  }
+
+  #info-cards div {
+    width: 80%;
+    /* margin: 0; */
+  }
+
+  #info-cards img {
+    width: 80%;
+  }
+
+  #info-cards p {
+    width: 70%;
+    /* margin: 0; */
+  }
+
+  #excercise-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #excercise-info #spin {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  #excercise-info #grid {
+    width: 100%;
+  }
+
+  #membership-info {
+    margin-left: 1rem;
+  }
+
+  #testimonials {
+    height: 100vh;
+    width: 80vw;
+    margin-left: 5rem;
+  }
+
+  #para-test {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 1rem; */
+    margin-left: 10rem;
+    height: 100%;
+    align-items: center;
+  }
+
+  #para-test div {
+    width: 100%;
+  }
+
+  #looking {
+    margin-top: 5rem;
+    margin-left: 7rem;
+    height: 100vh;
+  }
+
+  #looking-info {
+    flex-direction: column;
+  }
+
+  #contact-info {
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact-buttons {
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  #general-info {
+    height: 50vh;
+  }
+
+  #general-info #table-info {
+    width: 50%;
+  }
+
+  #looking-class {
+    text-align: right;
+  }
+}
