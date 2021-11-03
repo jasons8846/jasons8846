@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/2b940a1069.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Mulish', sans-serif;
+            background-color: rgb(245, 245, 245);
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: rgb(210, 229, 255);
+            width: 50vw;
+            margin-top: 1rem;
+            margin-left: 25vw;
+            border-radius: 5px;
+        }
+
+        #exchange-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        #header{
+            font-size: 35px;
+        }
+
+        #exchange-form label{
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 32px;
+        }
+
+        #measure_type{
+            font-size: 25px;
+            border-color: rgb(224, 224, 224);
+        }
+        
+        #measure_from{
+            font-size: 25px;
+            border-color: rgb(224, 224, 224);
+        }
+
+        #measure{
+            font-size: 25px;
+            width: 6rem;
+            text-align: center;
+            border: 1px solid rgb(224, 224, 224);
+        }
+
+       #info{
+           margin-left: 45vw;
+           
+       }
+
+       #info-dtl{
+           visibility: hidden;
+           background-color: rgb(210, 229, 255);
+           opacity: 0.5;
+           position: absolute;
+           width: 20rem;
+           text-align: center;
+           padding: 5px;
+       }
+
+       #footer{
+        font-family: 'Mulish', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       #update-info {
+           padding: 1rem;
+           font-size: 14px;
+       }
+
+       #update-info p:first-of-type{
+           padding-bottom: 0.5rem;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="info">
+            <p id="info-head"><i class="fas fa-info"></i></p>
+            <p id="info-dtl">The API link is <br> https://open.er-api.com/v6/latest/. <br> Choose your currency in the first dropdown and to compare it to the currency chosen in the second
+                    dropdown.</p>
+        </div>
+        <div id="header">
+            <h2>Exchange Rates</h2>
+        </div>
+        <div id="exchange-form">
+            <label for="measure_from">Choose Your From Currency</label>
+                <select name="exchange-from" id="measure_from">
+                </select>
+            <label for="measure_type">Choose Your To Currency</label>
+                <select name="exchange-rate" id="measure_type">
+                </select>
+            <label for="measure">Exchange Rate</label>
+                <input id="measure"></input>
+            
+        </div>
+        <div id="update-info">
+            <p>Last Update (UTC): <span id="last-upd"></span></p>
+            <p>Next Update (UTC): <span id="next-upd"></span></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        // Initialise variables and get HTML elements
+        const meas = document.getElementById("measure");
+        const meas_type = document.getElementById("measure_type");
+        const meas_from = document.getElementById("measure_from");
+        const info_head = document.getElementById("info-head");
+        const info_dtl = document.getElementById("info-dtl");
+        const last_upd = document.getElementById("last-upd");
+        const next_upd = document.getElementById("next-upd");
+        let api_url = 'https://open.er-api.com/v6/latest/USD';
+
+
+        // Add event listeneres to HTML elements
+        meas_type.addEventListener('change', getData);
+
+        info_head.addEventListener('mouseover', () => {
+            info_dtl.style.visibility = 'visible';
+        });
+
+        info_head.addEventListener('mouseout', () => {
+            info_dtl.style.visibility = 'hidden';
+        });
+
+
+        // Load initial Exchange rates for the dropdowns
+        async function popExchange(){
+            const reponse = await fetch(api_url);
+            const data = await reponse.json();
+
+            for (var i in data.rates){
+                const option = document.createElement("option");
+                option.text = i;
+                meas_type.add(option);
+            }
+
+            for (var i in data.rates){
+                const option = document.createElement("option");
+                option.text = i;
+                meas_from.add(option);
+            }
+
+            last_upd.textContent = data.time_last_update_utc;
+            next_upd.textContent = data.time_next_update_utc;
+        }
+
+        // Get the Exchange rate data based on the selected Currencies
+        async function getData(){
+            let row = 0;
+            let chk = meas_type.value;
+            api_url = `https://open.er-api.com/v6/latest/${meas_from.value}`;
+
+            const reponse = await fetch(api_url);
+            const data = await reponse.json();
+            const jdata = data.rates;
+
+          for (var i in data.rates){
+              if(chk === i){
+                meas.value = data.rates[i];
+              }
+            
+          }
+        }
+
+        popExchange();
+    
+    </script>
+</body>
+<footer id="footer">
+    <p>Jason Samuels &copy; 2021 All rights reserved</p>
+  </footer>
+</html>
