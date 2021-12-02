@@ -1,7 +1,7 @@
 :root {
   --primary-color: #333;
   --secondary-color: lightgray;
-  --bg-light: rgb(245, 243, 243);
+  --bg-light: rgb(255, 255, 255);
 }
 
 * {
@@ -29,6 +29,18 @@ a {
 
 p {
   padding: 1rem;
+}
+
+#home-intro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-intro p {
+  width: 60%;
+  line-height: 1.6;
 }
 
 .cards {
