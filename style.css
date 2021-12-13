@@ -97,11 +97,37 @@ p {
   margin-left: 1rem;
   margin-bottom: 5rem;
 
-  background-color: #d8d8d8;
+  /* background-color: #d8d8d8; */
 }
 
 #site-types div:hover {
   opacity: 0.5;
+}
+
+#site-types #own-sites {
+  background: url(./img/myown.jpg) no-repeat center center/cover;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#site-types #own-sites::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.3;
+}
+
+#site-types #own-sites * {
+  z-index: 10;
 }
 
 #repl-sites {
@@ -118,6 +144,12 @@ p {
   margin-bottom: 5rem;
 
   background-color: #d8d8d8;
+}
+
+#rep-sites {
+  background: url(./img/duplicate.jpg) no-repeat center center/cover;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .nav {
