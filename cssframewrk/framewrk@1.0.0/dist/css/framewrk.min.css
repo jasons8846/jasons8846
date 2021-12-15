@@ -7,18 +7,14 @@
   --light-color: #f1f0f0;
   --dark-color: #333;
   --white-color: #fff;
-
-  /* Hover effect colors */
   --primary-color-hover: #3251fc;
   --secondary-color-hover: #646363;
   --success-color-hover: #3ba50a;
   --danger-color-hover: #fd1313;
   --warning-color-hover: #fae17e;
-  --light-color-hover: #cccccc;
-  --dark-color-hover: rgb(36, 36, 36);
+  --light-color-hover: #ccc;
+  --dark-color-hover: #242424;
 }
-
-/* Base styling */
 * {
   margin: 0;
   padding: 0;
@@ -26,72 +22,51 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
-
-/* Container class */
 .container {
   margin-top: 1%;
   margin-left: 25%;
   width: 50%;
 }
-
-/* Section division */
 .section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-/* Text alignment */
 .txt-center {
   text-align: center;
 }
-
-/* Background setup */
 .bg {
   padding: 1px;
 }
-
 .bg-x2 {
   padding: 2px;
 }
-
 .bg-x3 {
   padding: 3px;
 }
-
 .bg-x4 {
   padding: 4px;
 }
-
-/* Background colors*/
 .bg-primary {
   background-color: var(--primary-color);
 }
-
 .bg-secondary {
   background-color: var(--secondary-color);
 }
-
 .bg-success {
   background-color: var(--success-color);
 }
-
 .bg-danger {
   background-color: var(--danger-color);
 }
-
 .bg-warning {
   background-color: var(--warning-color);
 }
-
 .bg-light {
   background-color: var(--light-color);
 }
-
 .bg-dark {
   background-color: var(--dark-color);
 }
-
-/* Button setup */
 .btn {
   margin: 1px;
   width: 100px;
@@ -100,83 +75,66 @@
   border-radius: 5px;
   border-width: 1px;
 }
-
-/* Button backgrounds */
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   border: none;
   color: var(--white-color);
 }
-
 .btn-secondary {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
   border: none;
   color: var(--white-color);
 }
-
 .btn-success {
   background-color: var(--success-color);
   border-color: var(--success-color);
   border: none;
   color: var(--white-color);
 }
-
 .btn-danger {
   background-color: var(--danger-color);
   border-color: var(--danger-color);
   border: none;
   color: var(--white-color);
 }
-
 .btn-warning {
   background-color: var(--warning-color);
   border-color: var(--warning-color);
   border: none;
   color: var(--dark-color);
 }
-
 .btn-light {
   background-color: var(--light-color);
   border-color: var(--light-color);
   border: none;
   color: var(--dark-color);
 }
-
 .btn-dark {
   background-color: var(--dark-color);
   border-color: var(--dark-color);
   border: none;
   color: var(--white-color);
 }
-
-/* Button hover effect */
-
 .btn-primary:hover {
   background-color: var(--primary-color-hover);
 }
-
 .btn-secondary:hover {
   background-color: var(--secondary-color-hover);
 }
-
 .btn-success:hover {
   background-color: var(--success-color-hover);
 }
-
 .btn-danger:hover {
   background-color: var(--danger-color-hover);
 }
-
 .btn-warning:hover {
   background-color: var(--warning-color-hover);
 }
-
 .btn-light:hover {
   background-color: var(--light-color-hover);
 }
-
 .btn-dark:hover {
   background-color: var(--dark-color-hover);
 }
