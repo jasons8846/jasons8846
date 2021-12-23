@@ -142,7 +142,7 @@ p {
   margin-top: 5rem;
   margin-left: 1rem;
   margin-bottom: 5rem;
-
+  min-width: 20rem;
   background-color: #d8d8d8;
 }
 
