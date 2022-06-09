@@ -3,57 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Webdesign Portfolio of Jason Samuels">
-    <meta name="keywords" content="Jason Samuels, freelance, website, designer, Belhar, Cape Town, Portfolio, Javascript">
-    <meta name="Author" content="Jason Samuels">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico">  
-    <script src="https://kit.fontawesome.com/80ed2d3fe0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1500px)" href="mobile.css">
-    <title>Jason Samuels | Portfolio | Website Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jason Samuels | Systems Analyst</title>
 </head>
 <body>
-    <h1>Jason Samuels Portfolio</h1>
-    <div id="home-intro">
-        <p>Hi my name is Jason Samuels and I am a freelance Website designer in Cape Town. My current skills in Web development is Html, CSS and Javascript.
-        
-        Below are links to illustrative websites that I have created so far in my journey. One is my own sites I have created and the other is replicates of existing websites I used to develop my skill as a web designer further.
-    </p>
+    <div id="quick-contact">
+        <p>jasons8846@gmail.com</p>
+        <a href="https://www.facebook.com/jason.samuels.33" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/codingforfun8846/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jason-samuels-51b01114b/" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <div id="info-container">
+        <div id="name-header">
+            <h1>Jason Samuels</h1>
+            <h3 class="primary-text">Systems Analyst</h3>
+        </div>
+        <div id="about" class="card">
+            <img src="./img/profile-image.png" alt="profile-image" class="card-content card-content-photo">
+            <div class="card-content">
+                <h3>About Me</h3>
+                <p>I am a hardworking individual with a pleasant character who gives only my best to any task or project delegated to me. I am quick witted, I use my own initiative, I am willing to learn and capable of communicating at all levels within an organization. I have a pleasant, versatile personality and do not have a problem in delegating tasks effectively. I thoroughly enjoy working with people and regard myself as a “team player”</p>
+            </div>
+        </div>
+
+        <div>
+            <button id="read-more" class="btn-primary">Read More</button>
+        </div>
+
+        <div id="more-info">
+            <div id="career" class="card">
+                <div class="card-content">
+                    <h3>Career</h3>
+                    <div class="card-content-section">
+                        <h4>Systems Analyst</h4>
+                        <span class="">Pepstores</span>
+                        <span>(2014 - present)</span>
+                        <p>Manage, improve and provide user support to the Replenishment system, the planning department use to forecast sales, determine order quanties for suppliers and distribute stock to stores.</p>
+                        <div class="card-section-line"></div>
+                    </div>
+                    <div class="card-content-section">
+                        <h4>Demand Planner</h4>
+                        <span class="">Pepstores (2011 - 2014)</span>
+                        <p>Sales analysis and forecasting. Distribute stock to stores. Analyse and manage stock levels on a DC and store level.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="skills" class="card">
+                <div class="card-content">
+                    <h3>Skills</h3>
+                    <div>
+                        <ul>
+                        <li>MS Office - Excel, Word, Power Point, Access</li>
+                        <li>Visual Basic</li>
+                        <li>SQL and PL/SQL</li>
+                        <li>HTML / CCS / Javascript</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="attributes" class="card">
+                <div class="card-content">
+                    <h3>Attributes</h3>
+                    <div>
+                        <ul>
+                        <li>Excellent written and verbal communication skills</li>
+                        <li>Results orientated and goal driven with a positive and pro-active attitude</li>
+                        <li>Highly Organized</li>
+                        <li>Ability to assess situations and make quick decisions</li>
+                        <li>Self-motivated with the ability to multi-task</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="education" class="card">
+                <div class="card-content">
+                    <h3>Education</h3>
+                    <div class="card-content-section">
+                        <h4>MComm in Operations Research</h4>
+                        <span class="">University of Stellenbosch (2013 - 2016)</span>
+                        <br><br>
+                        <p>Subjects:</p>
+                        <ul>
+                            <li>Full Thesis (Carton and Volume Forecasting from Picking Lines)</li>
+                        </ul>
+                        <div class="card-section-line"></div>
+                    </div>
+                    <div class="card-content-section">
+                        <h4>BComm Hons in Operations Research</h4>
+                        <span class="">University of Stellenbosch (2010)</span><br><br>
+                        <p>Subjects:</p>
+                        <ul>
+                            <li>Metaheuristics</li>
+                            <li>Placing of Facilities</li>
+                            <li>Game Theory</li>
+                            <li>Scheduling Theory</li>
+                            <li>Forecasting</li>
+                            <li>Inventory Modelling</li>
+                        </ul>
+                        <div class="card-section-line"></div>
+                    </div>
+                    <div class="card-content-section">
+                        <h4>Matriculated</h4>
+                        <span class="">Stellenbosch High School (2002 - 2006)</span><br><br>
+                        <p>Subjects:</p>
+                        <ul>
+                            <li>English</li>
+                            <li>Afrikaans</li>
+                            <li>Mathematics</li>
+                            <li>Economics</li>
+                            <li>Accounting</li>
+                            <li>Computer Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <section id="site-types">
-        <div id="own-sites">
-            <a href="own.html"title="Websites created from scratch">My Own Sites</a>
+    <div id="project-container">
+        <div id="project-header">
+            <h1>Personal Web Projects</h1>
         </div>
-        <div id="rep-sites">
-            <a href="replicates.html" title="Replicated Websites from existing websites">Replicate Sites</a>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="flex-1">
-            <div id="email" class="contact-link">
-                <a href="#"><i class="far fa-envelope fa-3x"></i>
-                <p>jasons8846@gmail.com</p></a>
-            </div>
-            <div id="facebook" class="contact-link">
-                <a href="https://www.facebook.com/jason.samuels.33"><i class="fab fa-facebook-f fa-3x"></i></a>
-            </div>
-            <div id="instagram" class="contact-link">
-                <a href="https://www.instagram.com/jasons880406/"><i class="fab fa-instagram fa-3x"></i></a>
-            </div>
-            <div id="linkedin" class="contact-link">
-                <a href="https://www.linkedin.com/in/jason-samuels-51b01114b/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+        <div id="webapps" class="card">
+            <div id="webapps-links" class="class-content">
+                <div>
+                    <a href="./websiteprojects/gym/index.html" aria-label="gym-page">
+                        <img src="./img/gym.JPG" alt="">
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="./websiteprojects/electronics/index.html" aria-label="electronic-page">
+                        <img src="./img/elec.JPG" alt="">
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="./websiteprojects/exchange_rates/index.html" aria-label="exchange-page">
+                        <img src="./img/exchange.JPG" alt=""></a>
+                    
+                </div>
+                <div>
+                    <a href="./websiteprojects/comp_repairs/index.html" aria-label="computer-page"><img src="./img/comp.JPG" alt=""></a>
+                    
+                </div>
+                <div>
+                    <a href="./websiteprojects/taskList/index.html" aria-label="tasklist-page"><img src="./img/tasklist.JPG" alt=""></a>
+                    
+                </div>
+                <div>
+                    <a href="./websiteprojects/cleaning/index.html" aria-label="wco-page"><img src="./img/wco.JPG" alt=""></a>
+                    
+                </div>
             </div>
         </div>
-    </section>
+
+    </div>
+
+    <div id="contact-info">
+        <div id="online-contact">
+            <p><i class="fa-solid fa-phone"></i> 078 999 4686</p>
+            <p><i class="fa-solid fa-envelope"></i> jasons8846@gmail.com</p>
+            <p><i class="fa-solid fa-house-chimney"></i> Belhar, Cape Town </p>
+            
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com/jason.samuels.33" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/codingforfun8846/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jason-samuels-51b01114b/" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div id="note">
+            <p>Please get in touch via these channels</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
-
-<footer id="footer">
-    <p>Jason Samuels &copy; 2021 All rights reserved</p>
-</footer>
 </html>
