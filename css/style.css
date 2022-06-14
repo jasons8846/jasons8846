@@ -1,3 +1,10 @@
+:root{
+    --color1:rgb(245, 245, 245);
+    --color2: #fff;
+    --color3: gray;
+    --color4: black;
+    --color5: rgb(46, 46, 46);
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +13,13 @@
 }
 
 body{
-    /* overflow-y:hidden; */
+    background-color: var(--color1);
 }
 
 
 #quick-contact{
-    background-color: rgb(46, 46, 46);
-    color: rgb(245, 245, 245);
+    background-color: var(--color5);
+    color: var(--color1);
     height: 3vh;
     display: flex;
     justify-content: center;
@@ -24,7 +31,7 @@ body{
 }
 
 #name-header{
-    color: gray;
+    color: var(--color3);
     margin: 1rem;
     text-align: center;
 }
@@ -41,7 +48,7 @@ body{
 
 
 .primary-text{
-    color: rgb(0, 0, 0);
+    color: var(--color4);
 }
 
 #more-info{
@@ -56,16 +63,16 @@ body{
 }
 
 a{
-    color: rgb(245, 245, 245);
+    color: var(--color2);
     text-decoration: none;
 }
 
 .btn-primary{
-    background-color: rgb(245, 245, 245);
-    color: gray;
+    background-color: var(--color2);
+    color: var(--color3);
     width: 6rem;
     height: 3rem;
-    color: black;
+    color: var(--color4);
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -78,7 +85,7 @@ a{
 .card{
     width: 65%;
     height: 40%;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--color2);
     border-radius: 5px;
     display: flex;
     justify-content:flex-start;
@@ -106,13 +113,13 @@ a{
 .card-section-line{
     width: 50%;
     height: 1px;
-    background-color: grey;
+    background-color: var(--color3);
     text-align: center;
     margin: 1rem 0 0 25%;
 }
 
 .card-content-section h4{
-    color: grey;
+    color: var(--color3);
 }
 
 .card-content-section span{
@@ -129,7 +136,7 @@ a{
 }
 
 #project-header{
-    color: gray;
+    color: var(--color3);
     margin: 1rem;
     text-align: center; 
 }
@@ -140,7 +147,6 @@ a{
     margin: 1rem;
     display: flex;
     align-items: center;
-
 }
 
 #webapps-links{
@@ -183,9 +189,9 @@ a{
 }
 
 #contact-info{
-    background-color: rgb(46, 46, 46);
-    color: white;
-    height: 15vh;
+    background-color: var(--color5);
+    color: var(--color2);
+    height: 25vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -199,4 +205,123 @@ a{
 
 ul{
     list-style: none;
+}
+
+@media only screen and (max-width: 950px) {
+
+    #webapps{
+        height: 65vh !important;
+    }
+
+
+    #webapps-links{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 0rem;
+    }
+
+    #contact-info{
+        height: 12vh;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+
+    #webapps{
+        height: 65vh !important;
+    }
+
+
+    #webapps-links{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 0rem;
+    }
+
+    #contact-info{
+        height: 15vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quick-contact *{
+        margin-left: 0.5rem;
+    }
+    
+
+    #webapps{
+        height: 185vh !important;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #webapps-links{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 1rem;
+    }
+
+    #contact-info{
+        height: 20vh;
+    }
+
+    #contact-info *{
+        font-size: 13.8px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quick-contact *{
+        margin-left: 0.5rem;
+    }
+
+
+    #webapps{
+        height: 190vh !important;
+    }
+
+    #webapps-links{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 20%);
+        margin-top: 1rem;
+    }
+
+    #contact-info *{
+        font-size: 12px;
+    }
+
+    #contact-info{
+        height: 25vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 360px) {
+    #webapps{
+        height: 170vh !important;
+    }
+
+    #webapps-links{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 20%);
+        margin-top: 1rem;
+    }
 }
