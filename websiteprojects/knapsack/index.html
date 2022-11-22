@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Spline+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Knapsack</title>
+</head>
+<script>
+    
+</script>
+<body>
+    <div id="overlay">
+    </div>
+    <div id="upld-overlay">
+        <!-- <div class="file-upload">
+            <div id="upld-head">
+            <label for="">Upload File</label><i class="fa-solid fa-x"></i>
+            </div>
+             <label for="file_upld" >Choose File</label>
+            <input type="file" name="file_upld" id="file_upld"> -->
+
+            <!-- /*class="btn-blue"*/ -->
+        </div>
+    </div>
+    
+    <div class="head">
+        <h1>Knapsack problem</h1>
+    </div>
+    <div class="input-container">
+        <div id="input-head">
+            <button id="calc-btn" class="btn-blue">
+                Calculate
+            </button>
+            <p id="max-value-para">The max value is: <span id="max-value">20</span></p>
+        </div>
+        <div id="max-input">
+            <label for="max-input-value">Max Value</label>
+            <input class="value-input" type="text" id="max-input-value" name="max-input-value" placeholder="Enter Max">
+        </div>
+        <div class="input-data">
+            <table id="input-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Value</th>
+                    <th>Weight</th>
+                    <th>Include</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="item-1">Item-1</label>
+                        <input class="item-input" type="text" name="item-1" id="item-1" tabindex="1">
+                    </td>
+                    <td class="input-param-value">
+                        <button class="btn-orange">-</button>
+                        <label for="item-1-subtract">Item-1-sub</label>
+                        <input class="value-input" type="text" name="item-1-subtract" id="item-1-subtract" tabindex="1">
+                        <button class="btn-orange">+</button>
+                    </td>
+                    <td class="input-param-weight">
+                        <button class="btn-orange">-</button>
+                        <label for="item-1-add">Item-1-add</label>
+                        <input class="value-input" type="text" name="item-1-add" id="item-1-add" tabindex="2">
+                        <button class="btn-orange">+</button>
+                    </td>
+                    <td>
+                        <label for="item-1-chk">Item-1-chk</label>
+                        <input type="checkbox" name="item-1-chk" id="item-1-chk">
+                    </td>
+                    <td class="input-trash">
+                        <span id="item-1-del" ><i class="fa-regular fa-trash-can fa-2x"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="option-footer">
+            <div id="add-item" class="btn-orange">
+                <!-- <i class="fa-solid fa-circle-plus fa-2x"></i> -->
+                <span>Add Item</span>
+           </div>
+           <div id="upload-items" class="btn-orange">
+            <!-- <i class="fa-solid fa-circle-plus fa-2x"></i> -->
+            <span>Upload</span>
+            </div>
+            <div id="reset-data" class="btn-red">
+                <!-- <i class="fa-solid fa-circle-plus fa-2x"></i> -->
+                <span>Reset</span>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="app.js" type="module"></script>
+</html>
+<!-- onclick="deleteMyItem(this.parentNode.parentNode)" -->
