@@ -126,7 +126,7 @@ a{
     font-style: italic;
 }
 
-#project-container{
+.project-container{
     position: relative;
     width: 100%;
     display: flex;
@@ -135,7 +135,7 @@ a{
     align-items: center;
 }
 
-#project-header{
+.project-header{
     color: var(--color3);
     margin: 1rem;
     text-align: center; 
@@ -148,6 +148,23 @@ a{
     display: flex;
     align-items: center;
 }
+
+#highlight-links{
+    width: 100%;
+}
+
+#highlight-links div{
+    width: 100%;
+    text-align: center;
+}
+
+#highlight-links div img {
+    border-radius: 10px;
+    object-fit:cover;
+    max-width: 80%;
+    height: 100%;
+    text-align: center;
+  }
 
 #webapps-links{
     display: grid;
@@ -191,7 +208,7 @@ a{
 #contact-info{
     background-color: var(--color5);
     color: var(--color2);
-    height: 25vh;
+    height: 12vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
