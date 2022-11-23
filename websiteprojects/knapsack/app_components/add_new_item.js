@@ -20,18 +20,18 @@ export function addNewItem (table, inputval, value, weight){
         // New Item value towards the Knapsack
         item_param_val.classList.add("input-param-value");
 
-        item_param_val.innerHTML = `<button class="btn-orange">-</button>` + 
+        item_param_val.innerHTML = `<button class="subtract btn-orange">-</button>` + 
         `<label for="item-${tableRowCount}-subtract">Item-${tableRowCount}-sub</label>`+
         `<input class="value-input" type="text" name="item-${tableRowCount}-subtract" id="item-${tableRowCount}-subtract" tabindex=${tableRowCount+4} value=${value}>`+
-        `<button class="btn-orange">+</button>`;
+        `<button class="addition btn-orange">+</button>`;
 
         // New Item weight towards the Knapsack
         item_param_weight.classList.add("input-param-weight");
 
-        item_param_weight.innerHTML = `<button class="btn-orange">-</button>`+
+        item_param_weight.innerHTML = `<button class="subtract btn-orange">-</button>`+
         `<label for="item-${tableRowCount}-add">Item-${tableRowCount}-add</label>`+
         `<input class="value-input" type="text" name="item-${tableRowCount}-add" id="item-${tableRowCount}-add" tabindex=${tableRowCount+5} value=${weight}>`+
-        `<button class="btn-orange">+</button>`;
+        `<button class="addition btn-orange">+</button>`;
 
         // New item check box
         item_chk.innerHTML = `<label for="item-${tableRowCount}-chk">Item-${tableRowCount}-chk</label>`+
@@ -43,6 +43,7 @@ export function addNewItem (table, inputval, value, weight){
 
         item_delete.addEventListener('click', deleteItem.bind(this));
 
+        itemAddEventListener();
 };
 
 
@@ -104,4 +105,37 @@ export function resetData(){
          max_calc_val.style.visibility = 'hidden';
          max_calc_val.style.position = 'absolute';
          max_calc_val.style.opacity = 0;
+}
+
+
+export function subtractValue (e){
+         var chngeVal = e.target.parentElement.children[2].value;
+         if (chngeVal > 0){
+            chngeVal = chngeVal - 1;
+         }
+          e.target.parentElement.children[2].value = chngeVal;
+}
+
+
+export function additionValue (e){
+        if(!e.target.parentElement.children[2].value){
+                e.target.parentElement.children[2].value = 0;
+             }
+             var chngeVal = parseInt(e.target.parentElement.children[2].value);
+             chngeVal += 1;
+             e.target.parentElement.children[2].value = chngeVal;
+}
+
+function itemAddEventListener(){
+        var subtract = document.querySelectorAll('.subtract');
+        var addition = document.querySelectorAll('.addition');
+
+        subtract.forEach(e => {
+                e.addEventListener('click',subtractValue.bind(this));
+             });
+             
+             
+             addition.forEach(e => {
+                e.addEventListener('click', additionValue.bind(this));
+             });
 }

@@ -1,5 +1,5 @@
 import { knapSackProblem } from "./methods/knapSackProblem.js";
-import { addNewItem, deleteItem, resetData } from "./app_components/add_new_item.js";
+import { addNewItem, deleteItem, resetData, subtractValue, additionValue } from "./app_components/add_new_item.js";
 import { messageBox } from "./app_components/pop_up.js";
 import { populateLocalStorage, getLocalStorage } from "./app_components/localstorage.js";
 import { uploadFile } from "./app_components/file_upload.js";
@@ -16,6 +16,8 @@ const max_val_input = document.querySelector('#max-input-value');
 const input_container = document.querySelector('.head');
 var deleteBtn = document.getElementsByClassName('input-trash');
 const resetBtn = document.querySelector('#reset-data');
+var subtract = document.querySelectorAll('.subtract');
+var addition = document.querySelectorAll('.addition');
 var result;
 
 // Populate fields with data in Local Storage
@@ -101,3 +103,14 @@ calc_btn.addEventListener('click', function(){
 
 
 upload_btn.addEventListener('click', uploadFile.bind(this));
+
+
+subtract.forEach(e => {
+   e.addEventListener('click',subtractValue.bind(this));
+});
+
+
+addition.forEach(e => {
+   e.addEventListener('click', additionValue.bind(this));
+});
+
